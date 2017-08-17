@@ -1,0 +1,30 @@
+{
+  "name": "product-catalog-test",
+  "version": "1.0.0",
+  "description": "New product catalog for the Dafiti E-Commerce platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dafiti/product-catalog-test.git"
+  },
+  "author": "Rodrigo Prata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dafiti/product-catalog-test/issues"
+  },
+  "homepage": "https://github.com/dafiti/product-catalog-test#readme",
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4"
+  }
+}
