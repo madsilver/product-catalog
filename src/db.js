@@ -1,7 +1,7 @@
 var mongoose = require("mongoose");
 var dbUri = "mongodb://localhost/dafiti";
 mongoose.Promise = global.Promise;
-mongoose.connect(dbUri);
+mongoose.connect(dbUri, { useMongoClient: true });
 
 
 process.on("SIGNIT", function() {
