@@ -44,7 +44,7 @@ describe("WMS webservice", function() {
 
     describe("/POST /product", function() {
         it("it should POST a batch between 0..N products", function(done) {
-            var product = JSON.parse(fs.readFileSync("wms_product_data_ok.json"));
+            var product = JSON.parse(fs.readFileSync("test/data.json"));
 
             chai.request(server)
                 .post("/product")
