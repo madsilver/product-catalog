@@ -8,10 +8,10 @@ var productCtrl = require("./src/productController");
 var stockCtrl = require("./src/stockController");
 var cmsCtrl = require("./src/cmsController");
 
-app.use(bodyParser.json());                                     
-app.use(bodyParser.urlencoded({extended: true}));               
-app.use(bodyParser.text());                                    
-app.use(bodyParser.json({ type: "application/json"})); 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/json"}));
 
 //wms
 app.route("/product")
@@ -22,7 +22,7 @@ app.route("/product")
 //stock
 app.get("/stock", stockCtrl.getStocks);
 app.get("/stock/:sku/:size", stockCtrl.getStock);
-app.put("/stock/:sku", stockCtrl.putStock);      
+app.put("/stock/:sku", stockCtrl.putStock);
 
 //cms
 app.get("/cms/:sku_category", cmsCtrl.getCms);
