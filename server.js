@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/json"}));
 
+app.get("/", function(req, res) {
+    res.send("Product Catalog API");
+});
+
 //wms
 app.route("/product")
     .get(productCtrl.getProducts)
